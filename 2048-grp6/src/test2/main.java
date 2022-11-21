@@ -50,6 +50,10 @@ public class main implements Parametres {
                     direction = GAUCHE;
                 } else if (s.equals("h") || s.equals("haut")) {
                     direction = HAUT;
+                } else if (s.equals("u") || s.equals("up")) {
+                    direction = UP; 
+                } else if (s.equals("l") || s.equals("down")) {
+                    direction = DOWN;    
                 } else {
                     direction = BAS;
                 }
