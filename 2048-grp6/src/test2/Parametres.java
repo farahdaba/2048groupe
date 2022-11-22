@@ -13,7 +13,7 @@ public interface Parametres {
     static final int GAUCHE = -2;
     static final int UP = 3;
     static final int DOWN = -3;
-    static final int TAILLE = 4;
+    static final int TAILLE = 3;
     static final int STAGE = 3;
     static final int OBJECTIF = 2048;
 }
