@@ -35,11 +35,11 @@ public class main implements Parametres {
             System.out.println("Déplacer vers la Droite (d), Gauche (g), Haut (h), ou Bas (b) , ou Up (u), ou Down (l)?");
             String s = sc.nextLine();
             s.toLowerCase();
-            if (!s.equals("d") || s.equals("droite")
+            if (!(s.equals("d") || s.equals("droite")
                 || s.equals("g") || s.equals("gauche")
                 || s.equals("h") || s.equals("haut")
                 || s.equals("b") || s.equals("bas")
-                || (s.equals("u") || s.equals("up")
+                || s.equals("u") || s.equals("up")
                 || s.equals("l") || s.equals("down"))) {
                 System.out.println("Vous devez écrire d pour Droite, g pour Gauche, h pour Haut, b pour Bas, u pour up ou l pour down");
             } else {
