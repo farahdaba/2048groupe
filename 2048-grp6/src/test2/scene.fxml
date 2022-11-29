@@ -13,10 +13,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: CCFFFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="test2.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: CCFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test2.FXMLController">
    <children>
-      <GridPane gridLinesVisible="true" layoutX="121.0" layoutY="422.0" prefHeight="300.0" prefWidth="300.0">
+      <GridPane id="G_1" gridLinesVisible="true" layoutX="121.0" layoutY="422.0" prefHeight="300.0" prefWidth="300.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -28,7 +27,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <GridPane gridLinesVisible="true" layoutX="450.0" layoutY="422.0" prefHeight="300.0" prefWidth="300.0">
+      <GridPane id="G_2" gridLinesVisible="true" layoutX="450.0" layoutY="422.0" prefHeight="300.0" prefWidth="300.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -40,7 +39,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <GridPane gridLinesVisible="true" layoutX="780.0" layoutY="422.0" prefHeight="300.0" prefWidth="300.0">
+      <GridPane id="G_3" gridLinesVisible="true" layoutX="780.0" layoutY="422.0" prefHeight="300.0" prefWidth="300.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -52,7 +51,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <Text layoutX="43.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2048 - 3D" textAlignment="CENTER" wrappingWidth="306.47916412353516">
+      <Text id="T_titre " layoutX="43.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2048 - 3D" textAlignment="CENTER" wrappingWidth="306.47916412353516">
          <font>
             <Font name="Calibri" size="68.0" />
          </font>
@@ -80,14 +79,14 @@
             </DisplacementMap>
          </effect>
       </Text>
-      <Button layoutX="939.0" layoutY="38.0" mnemonicParsing="false" text="Recommencer" textFill="#f5f5f5" textOverrun="WORD_ELLIPSIS">
+      <Button id="B_recommencer" layoutX="939.0" layoutY="38.0" mnemonicParsing="false" text="Recommencer" textFill="#f5f5f5" textOverrun="WORD_ELLIPSIS">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button layoutX="1080.0" layoutY="38.0" mnemonicParsing="false" text="Sauvegarder" />
-      <Button layoutX="1032.0" layoutY="97.0" mnemonicParsing="false" text="Quitter" />
-      <Text fill="#5f70e1" layoutX="67.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rejoignez les chiffres à l'intérieur du cube et accédez à la tuile 2048 !">
+      <Button id="B_sauvegarder" layoutX="1080.0" layoutY="38.0" mnemonicParsing="false" text="Sauvegarder" />
+      <Button id="B_quitter" layoutX="1032.0" layoutY="97.0" mnemonicParsing="false" text="Quitter" />
+      <Text id="T_instruction" fill="#5f70e1" layoutX="67.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rejoignez les chiffres à l'intérieur du cube et accédez à la tuile 2048 !">
          <font>
             <Font name="Wingdings 3" size="18.0" />
          </font>
