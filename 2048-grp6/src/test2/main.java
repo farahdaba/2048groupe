@@ -6,6 +6,7 @@
 package test2;
 
 import java.util.Scanner;
+import java.util.Random;
 
 
 public class main implements Parametres {
@@ -17,6 +18,7 @@ public class main implements Parametres {
         // TODO code application logic here
         Grille g = new Grille();
         boolean b = g.nouvelleCase();
+        Random random = new Random();
         /*b = g.nouvelleCase();
         */
         System.out.println(g);
@@ -40,7 +42,9 @@ public class main implements Parametres {
                 || s.equals("h") || s.equals("haut")
                 || s.equals("b") || s.equals("bas")
                 || s.equals("u") || s.equals("up")
-                || s.equals("l") || s.equals("down"))) {
+                || s.equals("l") || s.equals("down")
+                || s.equals("l") || s.equals("down")
+                || s.equals("r") || s.equals("random"))) {
                 System.out.println("Vous devez écrire d pour Droite, g pour Gauche, h pour Haut, b pour Bas, u pour up ou l pour down");
             } else {
                 int direction;
@@ -53,7 +57,9 @@ public class main implements Parametres {
                 } else if (s.equals("u") || s.equals("up")) {
                     direction = UP; 
                 } else if (s.equals("l") || s.equals("down")) {
-                    direction = DOWN;    
+                    direction = DOWN;
+                } else if (s.equals("r") || s.equals("random")) {
+                    direction = random.nextInt(7) - 3;
                 } else {
                     direction = BAS;
                 }
