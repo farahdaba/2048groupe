@@ -35,7 +35,7 @@ public class FXMLController implements Initializable {
    public Label label = new Label("2");
 
    @FXML
-   private GridPane g_1;
+   private GridPane G_1;
            
    @FXML
    private GridPane G_2;
@@ -74,6 +74,7 @@ private Label score;
    System.out.println("Clic de souris");
    try {
    score.setText(Integer.toString(Integer.parseInt(score.getText()) + 1));
+    G_1.add(label, 0, 0);
     } catch (NumberFormatException nfe) { … }
 }
 */
